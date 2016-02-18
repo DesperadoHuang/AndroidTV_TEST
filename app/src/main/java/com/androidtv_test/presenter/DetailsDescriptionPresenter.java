@@ -16,7 +16,7 @@ package com.androidtv_test.presenter;
 
 import android.support.v17.leanback.widget.AbstractDetailsDescriptionPresenter;
 
-import com.androidtv_test.Movie;
+import com.androidtv_test.model.Movie;
 
 public class DetailsDescriptionPresenter extends AbstractDetailsDescriptionPresenter {
 

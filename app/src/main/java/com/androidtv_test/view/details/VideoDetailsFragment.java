@@ -38,12 +38,12 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.androidtv_test.CardPresenter;
-import com.androidtv_test.DetailsDescriptionPresenter;
-import com.androidtv_test.Movie;
-import com.androidtv_test.MovieList;
 import com.androidtv_test.R;
-import com.androidtv_test.Utils;
+import com.androidtv_test.model.Movie;
+import com.androidtv_test.model.MovieList;
+import com.androidtv_test.model.Utils;
+import com.androidtv_test.presenter.CardPresenter;
+import com.androidtv_test.presenter.DetailsDescriptionPresenter;
 import com.androidtv_test.view.main.MainActivity;
 import com.androidtv_test.view.playback_overlay.PlaybackOverlayActivity;
 import com.bumptech.glide.Glide;
@@ -53,6 +53,8 @@ import com.bumptech.glide.request.target.SimpleTarget;
 
 import java.util.Collections;
 import java.util.List;
+
+;
 
 /*
  * LeanbackDetailsFragment extends DetailsFragment, a Wrapper fragment for leanback details screens.
@@ -199,7 +201,7 @@ public class VideoDetailsFragment extends DetailsFragment {
         List<Movie> list = MovieList.list;
 
         Collections.shuffle(list);
-        ArrayObjectAdapter listRowAdapter = new ArrayObjectAdapter(new com.androidtv_test.presenter.CardPresenter());
+        ArrayObjectAdapter listRowAdapter = new ArrayObjectAdapter(new CardPresenter());
         for (int j = 0; j < NUM_COLS; j++) {
             listRowAdapter.add(list.get(j % 5));
         }
