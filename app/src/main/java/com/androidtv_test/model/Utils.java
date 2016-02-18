@@ -12,7 +12,7 @@
  * the License.
  */
 
-package com.androidtv_test;
+package com.androidtv_test.model;
 
 import android.app.AlertDialog;
 import android.content.Context;

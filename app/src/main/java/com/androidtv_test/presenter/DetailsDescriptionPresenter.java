@@ -12,9 +12,11 @@
  * the License.
  */
 
-package com.androidtv_test;
+package com.androidtv_test.presenter;
 
 import android.support.v17.leanback.widget.AbstractDetailsDescriptionPresenter;
+
+import com.androidtv_test.Movie;
 
 public class DetailsDescriptionPresenter extends AbstractDetailsDescriptionPresenter {
 
@@ -26,6 +28,9 @@ public class DetailsDescriptionPresenter extends AbstractDetailsDescriptionPrese
             viewHolder.getTitle().setText(movie.getTitle());
             viewHolder.getSubtitle().setText(movie.getStudio());
             viewHolder.getBody().setText(movie.getDescription());
+            //            viewHolder.getTitle().setText("標題");
+            //            viewHolder.getSubtitle().setText("來源");
+            //            viewHolder.getBody().setText("簡介");
         }
     }
 }

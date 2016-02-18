@@ -12,7 +12,7 @@
  * the License.
  */
 
-package com.androidtv_test;
+package com.androidtv_test.presenter;
 
 import android.graphics.drawable.Drawable;
 import android.support.v17.leanback.widget.ImageCardView;
@@ -20,6 +20,8 @@ import android.support.v17.leanback.widget.Presenter;
 import android.util.Log;
 import android.view.ViewGroup;
 
+import com.androidtv_test.Movie;
+import com.androidtv_test.R;
 import com.bumptech.glide.Glide;
 
 /*

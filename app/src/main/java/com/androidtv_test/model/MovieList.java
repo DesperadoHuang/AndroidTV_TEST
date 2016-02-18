@@ -1,4 +1,4 @@
-package com.androidtv_test;
+package com.androidtv_test.model;
 
 import java.util.ArrayList;
 import java.util.List;

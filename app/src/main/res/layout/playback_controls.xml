@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/playback_controls_fragment"
-        android:name="com.androidtv_test.PlaybackOverlayFragment"
+        android:name="com.androidtv_test.view.playback_overlay.PlaybackOverlayFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

@@ -11,12 +11,13 @@
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.androidtv_test;
+package com.androidtv_test.view.error;
 
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+
+import com.androidtv_test.R;
 
 /*
  * This class demonstrates how to extend ErrorFragment
