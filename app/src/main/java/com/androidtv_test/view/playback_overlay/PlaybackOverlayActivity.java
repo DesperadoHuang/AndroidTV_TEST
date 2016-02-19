@@ -25,7 +25,7 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.widget.VideoView;
 
-import com.androidtv_test.Movie;
+import com.androidtv_test.model.Movie;
 import com.androidtv_test.R;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.animation.GlideAnimation;

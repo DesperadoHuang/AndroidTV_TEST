@@ -48,9 +48,9 @@ import android.support.v17.leanback.widget.RowPresenter;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.androidtv_test.CardPresenter;
-import com.androidtv_test.Movie;
-import com.androidtv_test.MovieList;
+import com.androidtv_test.presenter.CardPresenter;
+import com.androidtv_test.model.Movie;
+import com.androidtv_test.model.MovieList;
 import com.androidtv_test.R;
 import com.androidtv_test.view.details.DetailsActivity;
 import com.bumptech.glide.Glide;

@@ -20,7 +20,7 @@ import android.support.v17.leanback.widget.Presenter;
 import android.util.Log;
 import android.view.ViewGroup;
 
-import com.androidtv_test.Movie;
+import com.androidtv_test.model.Movie;
 import com.androidtv_test.R;
 import com.bumptech.glide.Glide;
 

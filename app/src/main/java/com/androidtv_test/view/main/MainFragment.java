@@ -40,10 +40,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.androidtv_test.presenter.CardPresenter;
-import com.androidtv_test.Movie;
-import com.androidtv_test.MovieList;
 import com.androidtv_test.R;
+import com.androidtv_test.model.Movie;
+import com.androidtv_test.model.MovieList;
+import com.androidtv_test.presenter.CardPresenter;
 import com.androidtv_test.view.details.DetailsActivity;
 import com.androidtv_test.view.error.BrowseErrorActivity;
 import com.bumptech.glide.Glide;
@@ -56,6 +56,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
+
 
 public class MainFragment extends BrowseFragment {
     private static final String TAG = "MainFragment";
@@ -221,7 +222,7 @@ public class MainFragment extends BrowseFragment {
                         ((ImageCardView) itemViewHolder.view).getMainImageView(),
                         DetailsActivity.SHARED_ELEMENT_NAME).toBundle();
                 getActivity().startActivity(intent, bundle);
-//                getActivity().startActivity(intent);
+                //                getActivity().startActivity(intent);
             } else if (item instanceof String) {
                 if (((String) item).indexOf(getString(R.string.error_fragment)) >= 0) {
                     Intent intent = new Intent(getActivity(), BrowseErrorActivity.class);
