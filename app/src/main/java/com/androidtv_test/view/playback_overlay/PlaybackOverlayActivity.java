@@ -69,7 +69,8 @@ public class PlaybackOverlayActivity extends Activity implements
 
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
-        PlaybackOverlayFragment playbackOverlayFragment = (PlaybackOverlayFragment) getFragmentManager().findFragmentById(R.id.playback_controls_fragment);
+        PlaybackOverlayFragment playbackOverlayFragment =
+                (PlaybackOverlayFragment) getFragmentManager().findFragmentById(R.id.playback_controls_fragment);
         switch (keyCode) {
             case KeyEvent.KEYCODE_MEDIA_PLAY:
                 playbackOverlayFragment.togglePlayback(false);
@@ -143,10 +144,8 @@ public class PlaybackOverlayActivity extends Activity implements
         String title = movie.getTitle().replace("_", " -");
 
         metadataBuilder.putString(MediaMetadata.METADATA_KEY_DISPLAY_TITLE, title);
-        metadataBuilder.putString(MediaMetadata.METADATA_KEY_DISPLAY_SUBTITLE,
-                movie.getDescription());
-        metadataBuilder.putString(MediaMetadata.METADATA_KEY_DISPLAY_ICON_URI,
-                movie.getCardImageUrl());
+        metadataBuilder.putString(MediaMetadata.METADATA_KEY_DISPLAY_SUBTITLE, movie.getDescription());
+        metadataBuilder.putString(MediaMetadata.METADATA_KEY_DISPLAY_ICON_URI, movie.getCardImageUrl());
 
         // And at minimum the title and artist for legacy support
         metadataBuilder.putString(MediaMetadata.METADATA_KEY_TITLE, title);
@@ -164,7 +163,7 @@ public class PlaybackOverlayActivity extends Activity implements
                 });
     }
 
-    private void loadViews() {
+    private void  loadViews() {
         mVideoView = (VideoView) findViewById(R.id.videoView);
         mVideoView.setFocusable(false);
         mVideoView.setFocusableInTouchMode(false);
